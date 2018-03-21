@@ -1,0 +1,22 @@
+{
+  "name": "@bach95/nodejs-test",
+  "version": "1.1.0",
+  "description": "Test manage nodejs project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bach95/nodejs-test.git"
+  },
+  "author": "bach95",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bach95/nodejs-test/issues"
+  },
+  "homepage": "https://github.com/bach95/nodejs-test#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
