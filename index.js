@@ -1,10 +1,12 @@
-const express = require('express')
+import express from 'express';
 const path = require('path')
 const PORT = process.env.PORT || 5000
-
-express()
+let app = express();
+import fccapi from './router/fccapi';
+app.use(fccapi);
+app
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .listen(PORT, () => console.log(`Listening on ${PORT}`));
